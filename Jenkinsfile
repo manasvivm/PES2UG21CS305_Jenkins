@@ -10,7 +10,7 @@ pipeline{
     }
     stage('Test'){
       steps{
-      sh './output'
+      sh './outpu'
       }
     }
     stage('Deploy'){
@@ -18,7 +18,7 @@ pipeline{
         echo 'deploy'
       }
     }
-  
+  }
   post{
     failure{
       error 'Pipeline failed'
